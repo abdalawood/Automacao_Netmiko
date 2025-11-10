@@ -11,10 +11,11 @@ app = Flask(__name__)
 # Configurações do dispositivo via .env (SEGURANÇA)
 CISCO_DEVICE = {
     'device_type': 'cisco_ios',
-    'host': os.getenv('ROUTER_IP', '192.168.180.129'),
-    'username': os.getenv('ROUTER_USER', 'netmiko'),
-    'password': os.getenv('ROUTER_PASS', 'cisco'),
-    'secret': os.getenv('ROUTER_PASS', 'cisco'),  # para enable
+    'host': os.getenv('ROUTER_IP'),
+    'username': os.getenv('ROUTER_USER'),
+    'password': os.getenv('ROUTER_PASS'),
+    'secret': os.getenv('ROUTER_PASS'),  # para enable
+    'port': 22, 
     'timeout': 15
 }
 

@@ -3,11 +3,12 @@ from netmiko import ConnectHandler
 # --- 1. Dados de Conexão (Fixo) ---
 cisco_device = {
     'device_type': 'cisco_ios',
-    'host': '192.168.180.129', # O IP do seu vIOS
-    'username': 'netmiko',
-    'password': 'cisco',
+    'host': os.getenv('ROUTER_IP'),
+    'username': os.getenv('ROUTER_USER'),
+    'password': os.getenv('ROUTER_PASS'),
+    'secret': os.getenv('ROUTER_PASS'),  # para enable
     'port': 22, 
-    'timeout': 15 
+    'timeout': 15
 }
 
 # --- 2. Coletar Dados da Caixa de Diálogo (Entrada do Usuário) ---

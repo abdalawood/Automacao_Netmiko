@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Remover Loopback</title>
+</head>
+<body>
+    <h2>Remoção de Interface Loopback</h2>
+    <p>Atenção: A configuração desta interface será removida por completo.</p>
+    <form method="POST" action="/remover_loopback">
+        <label for="id">Número da Loopback para Remover (ex: 100):</label><br>
+        <input type="text" id="id" name="loopback_id_remover" required><br><br>
+        
+        <input type="submit" value="REMOVER Configuração">
+    </form>
+    <p><a href='/'>Voltar para Configuração</a></p>
+</body>
+</html>

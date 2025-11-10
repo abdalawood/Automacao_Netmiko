@@ -1,0 +1,19 @@
+# Arquivos sensíveis
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Flask
+instance/

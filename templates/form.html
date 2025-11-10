@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Configuracao Loopback Python</title>
+</head>
+<body>
+    <h2>Configuracao de Interface Loopback</h2>
+    
+    <form method="POST" action="/configurar">
+        <label for="id">Numero da Loopback:</label><br>
+        <input type="text" id="id" name="loopback_id" required><br><br>
+        
+        <label for="ip">Endereco IPv4:</label><br>
+        <input type="text" id="ip" name="loopback_ip" required><br><br>
+        
+        <label for="mask">Mascara de Sub-rede:</label><br>
+        <input type="text" id="mask" name="loopback_mask" required><br><br>
+        
+        <label for="desc">Descricao:</label><br>
+        <input type="text" id="desc" name="loopback_desc"><br><br>
+        
+        <input type="submit" value="Aplicar Configuracao via Python">
+    </form>
+    
+    <hr>
+    
+    <p>
+       <a href="/remover">Ir para a página de Remocao de Interface</a> | <a href="/status">Visualizar Status Atual do Roteador</a>
+    </p>
+</body>
+</html>
